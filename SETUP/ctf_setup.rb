@@ -2,14 +2,14 @@ require 'fileutils'
 
 # Read pre-generated SSH private key
 def read_ssh_private_key
-  private_key_path = '/tmp/ctf_key'
+  private_key_path = '/tmp/git_key'
 
   # Check if file exists and is readable
   unless File.exist?(private_key_path)
-    raise "Private key file not found at #{private_key_path}. Generate it with 'sudo ssh-keygen -t rsa -b 2048 -C \"ctf_key\" -f /tmp/ctf_key -N \"\"'"
+    raise "Private key file not found at #{private_key_path}. Generate it with 'sudo ssh-keygen -t rsa -b 2048 -C \"git_key\" -f /tmp/git_key -N \"\"'"
   end
   unless File.readable?(private_key_path)
-    raise "Cannot read private key file at #{private_key_path}. Ensure it is readable by the current user (e.g., adjust permissions with 'sudo chmod 640 /tmp/ctf_key' or run as root)."
+    raise "Cannot read private key file at #{private_key_path}. Ensure it is readable by the current user (e.g., adjust permissions with 'sudo chmod 640 /git/ctf_key' or run as root)."
   end
 
   File.read(private_key_path)
@@ -18,7 +18,7 @@ end
 # Read SSH private key
 begin
   private_key = read_ssh_private_key
-  puts "Successfully read SSH private key from /tmp/ctf_key"
+  puts "Successfully read SSH private key from /tmp/git_key"
 rescue StandardError => e
   puts "Error reading SSH private key: #{e.message}"
   raise
