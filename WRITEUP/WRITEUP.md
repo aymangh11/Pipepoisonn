@@ -38,9 +38,13 @@ The second machine reveals:
 
 #### Accessing the GitLab Instance
 
+![secdojo](./images/gitlab-ui.png)
+
 Navigating to `http://<machine-1-ip>` presents us with a GitLab login page. Importantly, we notice that user registration is enabled, allowing us to create our own account.
 
 #### Repository Discovery
+
+![secdojo](./images/public-repos.png)
 
 After logging in, we explore the available projects and discover several repositories with different visibility levels:
 
@@ -51,10 +55,14 @@ After logging in, we explore the available projects and discover several reposit
 - **Description**: Contains CI/CD pipeline configurations
 - **Key Files**: `.gitlab-ci.yml`, deployment scripts
 
+![secdojo](./images/devops-tools.png)
+
 **2. docker-examples**  
 - **Visibility**: Public
 - **Description**: Contains Kubernetes examples and documentation
 - **Key Files**: Various YAML configurations, comment files
+
+![secdojo](./images/docker-examples.png)
 
 #### Analyzing docker-examples Repository
 
@@ -72,10 +80,7 @@ This comment provides valuable intelligence:
 
 #### Investigating devops-tools Repository
 
-![secdojo](./images/devops-tools.png)
-
 The devops-tools repository contains a GitLab CI/CD pipeline configuration that warrants closer inspection.
-
 
 
 **Current `.gitlab-ci.yml` content:**
