@@ -62,7 +62,7 @@ After logging in, we explore the available projects and discover several reposit
 - **Description**: Contains Kubernetes examples and documentation
 - **Key Files**: Various YAML configurations, comment files
 
-![secdojo](./images/docker-examples.png)
+![secdojo](./images/docker-example.png)
 
 #### Analyzing docker-examples Repository
 
