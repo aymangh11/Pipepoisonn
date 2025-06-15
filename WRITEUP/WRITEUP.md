@@ -1,7 +1,5 @@
 # PipePoison Lab Writeup
 
-## Part 1: Initial Reconnaissance
-
 ### Overview
 
 This writeup covers the exploitation of a multi-machine DevOps environment involving GitLab, Kubernetes, and CI/CD pipeline vulnerabilities. The challenge demonstrates real-world attack scenarios in modern containerized infrastructure.
