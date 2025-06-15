@@ -241,7 +241,7 @@ curl --header "PRIVATE-TOKEN: <ci-bot-token>" "http://<gitlab-ip>/api/v4/project
 curl --header "PRIVATE-TOKEN: <ci-bot-token" "http://<gitlab-ip>/api/v4/projects/<project-id>/jobs/<job-id>/trace"
 ```
 
-**Output (summarized):**
+**Output:**
 
 ![secdojo](./images/pipeline-output.png)
 
